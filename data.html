@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ksaw Summary</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="solo nav0">
+            <a href="http://ccse.kennesaw.edu/it" target="_blank"><ul class="toplogo">
+                <li>K</li>
+                <li>S</li>
+                <li>A</li>
+                <li>W</li>
+              </ul></a>
+        </div>
+        <div class="nav3">
+         
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="data.html">GPA Calculator</a>
+            <a href="summary.html">Summary</a>
+            
+        </div>
+
+        
+    </div>
+<div class="main-content">
+   
+    <div class="intro">
+        <div class="video-background">
+            <!-- Background video -->
+               <video autoplay muted loop id="myVideo">
+                   <source src="videos/video2.mp4" type="video/mp4">
+               </video>
+        </div>   
+        <h1>GPA Calculator</h1>
+        <p>Get an idea of where you stand with our GPA calculator tool!</p>
+    </div>
+    <div class="description">
+        <label>Select Graduate Status</label>
+        <select onchange="showClasses()" id="select-status">
+        <option value="undergrad">Undergraduate</option>
+        <option value="grad">Graduate</option>
+        </select>
+        <div id="classes_undergraduate">
+        <label>CSE1321 Programming and Problem Solving 1: </label>
+        <input name="grade-ugi" class="grade" value="4" type="radio">
+        <label>A</label>
+        <input name="grade-ugl" class="grade" value="3" type="radio">
+        <label>B</label>
+        <input name="grade-ugi" class="grade" value="2" type="radio">
+        <label>C</label>
+        <input name="grade-ugl" class="grade" value="1" type="radio">
+        <label>D</label>
+        <input name="grade-ugl" class="grade" value="0" type="radio">
+        <label>F</label>
+        
+        </br></br>
+        
+        <label>CSE3123 Hardware Concepts: </label>
+        <input name="grade-ug2" class="grade" value="4" type="radio">
+        <label>A</label>
+        <input name="grade-ug2" class="grade" value="3" type="radio">
+        <label>B</label>
+        <input name="grade-ug2" class="grade" value="2" type="radio">
+        <label>C</label>
+        <input name="grade-ug2" class="grade" value="1" type="radio">
+        <label>D</label>
+        <input name="grade-ug2" class="grade" value="0" type="radio">
+        <label>F</label>
+        
+        </br></br>
+        
+        <label>CSE3153 Database Systems: </label>
+        
+        <input name="grade-ug3" class="grade" value="4" type="radio">
+        <label>A</label>
+        <input name="grade-ug3" class="grade" value="3" type="radio">
+        <label>B</label>
+        <input name="grade-ug3" class="grade" value="2" type="radio">
+        <label>C</label>
+        <input name="grade-ug3" class="grade" value="1" type="radio">
+        <label>D</label>
+        <input name="grade-ug3" class="grade" value="0" type="radio">
+        <label>F</label>
+        
+        </br></br>
+        <label>IT4983 IT Capstone: </label>
+        <input name="grade-ug4" class="grade" value="4" type="radio">
+        <label>A</label>
+        <input name="grade-ug4" class="grade" value="3" type="radio">
+        <label>B</label>
+        <input name="grade-ug4" class="grade" value="2" type="radio">
+        <label>C</label>
+        <input name="grade-ug4" class="grade" value="1" type="radio">
+        <label>D</label>
+        <input name="grade-ug4" class="grade" value="0" type="radio">
+        <label>F</label>
+        
+        </br></br>
+        
+        <label>IT4723 IT Policies and Law: </label>
+        <input name="grade-ug5" class="grade" value="4" type="radio">
+        <label>A</label>
+        <input name="grade-ug5" class="grade" value="3" type="radio">
+        <label>B</label>
+        <input name="grade-ug5" class="grade" value="2" type="radio">
+        <label>C</label>
+        <input name="grade-ug5" class="grade" value="1" type="radio">
+        <label>D</label>
+        <input name="grade-ug5" class="grade" value="0" type="radio">
+        <label>F</label>
+        </div></br>
+        <div id="classes_graduate">
+            <label>CSE1321 Programming and Problem Solving 1: </label>
+            <input name="grade-ugi" class="grade" value="4" type="radio">
+            <label>A</label>
+            <input name="grade-ugl" class="grade" value="3" type="radio">
+            <label>B</label>
+            <input name="grade-ugi" class="grade" value="2" type="radio">
+            <label>C</label>
+            <input name="grade-ugl" class="grade" value="1" type="radio">
+            <label>D</label>
+            <input name="grade-ugl" class="grade" value="0" type="radio">
+            <label>F</label>
+            
+            </br></br>
+            
+            <label>CSE3123 Hardware Concepts: </label>
+            <input name="grade-ug2" class="grade" value="4" type="radio">
+            <label>A</label>
+            <input name="grade-ug2" class="grade" value="3" type="radio">
+            <label>B</label>
+            <input name="grade-ug2" class="grade" value="2" type="radio">
+            <label>C</label>
+            <input name="grade-ug2" class="grade" value="1" type="radio">
+            <label>D</label>
+            <input name="grade-ug2" class="grade" value="0" type="radio">
+            <label>F</label>
+            
+            </br></br>
+            
+            <label>CSE3153 Database Systems: </label>
+            
+            <input name="grade-ug3" class="grade" value="4" type="radio">
+            <label>A</label>
+            <input name="grade-ug3" class="grade" value="3" type="radio">
+            <label>B</label>
+            <input name="grade-ug3" class="grade" value="2" type="radio">
+            <label>C</label>
+            <input name="grade-ug3" class="grade" value="1" type="radio">
+            <label>D</label>
+            <input name="grade-ug3" class="grade" value="0" type="radio">
+            <label>F</label>
+            
+            </br></br>
+            <label>IT4983 IT Capstone: </label>
+            <input name="grade-ug4" class="grade" value="4" type="radio">
+            <label>A</label>
+            <input name="grade-ug4" class="grade" value="3" type="radio">
+            <label>B</label>
+            <input name="grade-ug4" class="grade" value="2" type="radio">
+            <label>C</label>
+            <input name="grade-ug4" class="grade" value="1" type="radio">
+            <label>D</label>
+            <input name="grade-ug4" class="grade" value="0" type="radio">
+            <label>F</label>
+            
+            </br></br>
+            
+            <label>IT4723 IT Policies and Law: </label>
+            <input name="grade-ug5" class="grade" value="4" type="radio">
+            <label>A</label>
+            <input name="grade-ug5" class="grade" value="3" type="radio">
+            <label>B</label>
+            <input name="grade-ug5" class="grade" value="2" type="radio">
+            <label>C</label>
+            <input name="grade-ug5" class="grade" value="1" type="radio">
+            <label>D</label>
+            <input name="grade-ug5" class="grade" value="0" type="radio">
+            <label>F</label>
+        </div>
+        
+        <button onclick="calculate()" type="submit">Calculate</button><br/>
+        <label>Results</label><br/>
+        <div id="result"></div>
+    </div>
+    <div class="footer">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="http://www.kennesaw.edu/">Kennesaw State University</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>
